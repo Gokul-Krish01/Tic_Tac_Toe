@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div class="menu">
+            <button id="singlePlayerButton">Single Player</button><br>
+            <button id="multiPlayerButton">Multiplayer</button><br>
+            <button id="exitButton">Exit</button>
+        </div>
+        <div class="board">
+            <div class="cell" data-index="0" data-turn="X"></div>
+            <div class="cell" data-index="1" data-turn="X"></div>
+            <div class="cell" data-index="2" data-turn="X"></div>
+            <div class="cell" data-index="3" data-turn="X"></div>
+            <div class="cell" data-index="4" data-turn="X"></div>
+            <div class="cell" data-index="5" data-turn="X"></div>
+            <div class="cell" data-index="6" data-turn="X"></div>
+            <div class="cell" data-index="7" data-turn="X"></div>
+            <div class="cell" data-index="8" data-turn="X"></div>
+        </div>
+        <button id="resetButton">Reset Game</button>
+        <p id="status"></p>
+    </div>
+
+    <!-- Winner Modal -->
+    <div id="winnerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="winnerText"></p>
+            <button id="playAgainButton">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
